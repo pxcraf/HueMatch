@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kuis>
+  <metadata>
+    <judul>Kuis Teori Warna — HueMatch</judul>
+    <deskripsi>Evaluasi pemahaman Anda tentang teori warna dasar. Jawab semua soal dan lihat skor Anda!</deskripsi>
+    <total_soal>10</total_soal>
+    <batas_waktu>0</batas_waktu>
+  </metadata>
+
+  <soal>
+    <item id="1">
+      <pertanyaan>Warna apa saja yang termasuk dalam warna PRIMER dalam model warna pigmen (RYB)?</pertanyaan>
+      <pilihan>
+        <a>Merah, Hijau, Biru</a>
+        <b>Merah, Kuning, Biru</b>
+        <c>Merah, Oranye, Ungu</c>
+        <d>Cyan, Magenta, Kuning</d>
+      </pilihan>
+      <jawaban>b</jawaban>
+      <penjelasan>Dalam model warna pigmen RYB (Red-Yellow-Blue) yang digunakan dalam seni, tiga warna primer adalah Merah, Kuning, dan Biru. Warna-warna ini tidak dapat dibuat dengan mencampur warna lain.</penjelasan>
+    </item>
+
+    <item id="2">
+      <pertanyaan>Apa yang dihasilkan jika kita mencampurkan warna Merah dan Kuning?</pertanyaan>
+      <pilihan>
+        <a>Ungu</a>
+        <b>Hijau</b>
+        <c>Oranye</c>
+        <d>Coklat</d>
+      </pilihan>
+      <jawaban>c</jawaban>
+      <penjelasan>Merah + Kuning = Oranye. Ini adalah salah satu warna sekunder yang dihasilkan dari pencampuran dua warna primer dalam proporsi yang sama.</penjelasan>
+    </item>
+
+    <item id="3">
+      <pertanyaan>Berapa jumlah warna TERSIER yang ada dalam roda warna standar?</pertanyaan>
+      <pilihan>
+        <a>3</a>
+        <b>4</b>
+        <c>6</c>
+        <d>12</d>
+      </pilihan>
+      <jawaban>c</jawaban>
+      <penjelasan>Ada 6 warna tersier dalam roda warna: Merah-Oranye, Kuning-Oranye, Kuning-Hijau, Biru-Hijau, Biru-Ungu, dan Merah-Ungu. Masing-masing dibuat dengan mencampurkan satu warna primer dan satu warna sekunder.</penjelasan>
+    </item>
+
+    <item id="4">
+      <pertanyaan>Apa yang dimaksud dengan skema warna KOMPLEMENTER?</pertanyaan>
+      <pilihan>
+        <a>Warna-warna yang berdekatan di roda warna</a>
+        <b>Warna-warna yang berseberangan di roda warna</b>
+        <c>Variasi shade dari satu warna yang sama</c>
+        <d>Tiga warna yang berjarak 120° di roda warna</d>
+      </pilihan>
+      <jawaban>b</jawaban>
+      <penjelasan>Warna komplementer adalah warna-warna yang berada tepat berseberangan satu sama lain dalam roda warna. Kombinasi ini menghasilkan kontras yang sangat kuat dan dramatis, seperti Merah-Hijau atau Biru-Oranye.</penjelasan>
+    </item>
+
+    <item id="5">
+      <pertanyaan>Warna apa yang dihasilkan dari pencampuran Biru dan Kuning?</pertanyaan>
+      <pilihan>
+        <a>Ungu</a>
+        <b>Oranye</b>
+        <c>Hijau</c>
+        <d>Coklat</d>
+      </pilihan>
+      <jawaban>c</jawaban>
+      <penjelasan>Biru + Kuning = Hijau. Hijau adalah salah satu dari tiga warna sekunder. Hijau identik dengan alam, pertumbuhan, dan harmoni.</penjelasan>
+    </item>
+
+    <item id="6">
+      <pertanyaan>Skema warna ANALOGUS menggunakan warna-warna yang...</pertanyaan>
+      <pilihan>
+        <a>Berseberangan di roda warna</a>
+        <b>Berjarak 120° satu sama lain</b>
+        <c>Berdekatan di roda warna</c>
+        <d>Berasal dari satu warna dengan variasi kecerahan</d>
+      </pilihan>
+      <jawaban>c</jawaban>
+      <penjelasan>Skema analogus menggunakan 3-4 warna yang saling berdekatan pada roda warna. Kombinasi ini menciptakan kesan harmonis, alami, dan menyenangkan di mata. Contoh: Kuning, Kuning-Hijau, dan Hijau.</penjelasan>
+    </item>
+
+    <item id="7">
+      <pertanyaan>Dalam model warna cahaya RGB, apakah pencampuran semua cahaya warna dasar (Merah, Hijau, Biru) menghasilkan?</pertanyaan>
+      <pilihan>
+        <a>Hitam</a>
+        <b>Coklat</b>
+        <c>Abu-abu</c>
+        <d>Putih</d>
+      </pilihan>
+      <jawaban>d</jawaban>
+      <penjelasan>Dalam model warna cahaya (additive color model) RGB, mencampurkan semua warna dasar dengan intensitas penuh akan menghasilkan cahaya putih. Ini berbeda dengan model pigmen di mana pencampuran semua warna menghasilkan hitam.</penjelasan>
+    </item>
+
+    <item id="8">
+      <pertanyaan>Warna SEKUNDER manakah yang dihasilkan dari campuran Merah dan Biru?</pertanyaan>
+      <pilihan>
+        <a>Oranye</a>
+        <b>Hijau</b>
+        <c>Ungu</c>
+        <d>Coklat</d>
+      </pilihan>
+      <jawaban>c</jawaban>
+      <penjelasan>Merah + Biru = Ungu. Ungu adalah warna sekunder ketiga selain Oranye dan Hijau. Ungu sering dikaitkan dengan kemewahan, misteri, dan kreativitas.</penjelasan>
+    </item>
+
+    <item id="9">
+      <pertanyaan>Apa yang dimaksud dengan skema warna MONOKROMATIK?</pertanyaan>
+      <pilihan>
+        <a>Menggunakan tiga warna yang berbeda</a>
+        <b>Variasi shade, tint, dan tone dari satu warna yang sama</b>
+        <c>Warna yang berseberangan di roda warna</c>
+        <d>Campuran warna hangat dan dingin</d>
+      </pilihan>
+      <jawaban>b</jawaban>
+      <penjelasan>Skema monokromatik menggunakan satu warna dasar dengan berbagai variasi kecerahan (shade), kecemerlanagan (tint), dan kejenuhan (tone). Hasilnya adalah tampilan yang elegan dan mudah dipadukan.</penjelasan>
+    </item>
+
+    <item id="10">
+      <pertanyaan>Dalam psikologi warna, warna apakah yang paling sering diasosiasikan dengan kepercayaan dan ketenangan?</pertanyaan>
+      <pilihan>
+        <a>Merah</a>
+        <b>Kuning</b>
+        <c>Biru</c>
+        <d>Oranye</d>
+      </pilihan>
+      <jawaban>c</jawaban>
+      <penjelasan>Biru adalah warna yang paling sering diasosiasikan dengan kepercayaan, ketenangan, dan loyalitas. Itulah mengapa banyak perusahaan besar seperti bank dan platform media sosial menggunakan biru sebagai warna utama merek mereka.</penjelasan>
+    </item>
+  </soal>
+</kuis>

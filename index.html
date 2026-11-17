@@ -1,0 +1,527 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="HueMatch — Platform edukasi interaktif teori warna. Pelajari warna primer, sekunder, harmoni, dan uji pemahaman Anda." />
+    <title>HueMatch — Eksplorasi Teori Warna</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+
+    <!-- ===== NAVBAR ===== -->
+    <header class="navbar-neo fixed-top" id="mainNavbar">
+      <div class="container">
+        <div class="nav-container-pill d-flex align-items-center justify-content-between">
+          <a class="navbar-brand-neo" href="#beranda">Hue<span>Match</span>.</a>
+
+          <div class="d-none d-md-flex align-items-center gap-1">
+            <a class="nav-link-neo active" href="#beranda">Beranda</a>
+            <a class="nav-link-neo" href="#fitur">Fitur</a>
+            <a class="nav-link-neo" href="#materi">Materi</a>
+            <a class="nav-link-neo" href="#simulasi">Simulasi</a>
+            <a class="nav-link-neo" href="#kuis">Kuis</a>
+          </div>
+
+          <a href="#simulasi" class="btn-neo btn-neo-primary py-2 px-3 d-none d-sm-inline-flex" style="font-size:0.86rem;">
+            Coba Lab <i class="bi bi-arrow-up-right ms-1"></i>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- ===== HERO SECTION ===== -->
+    <div id="beranda" style="scroll-margin-top:80px;">
+      <section class="hero-stage">
+        <!-- Playful geometric motif pattern (replaces large watermark text) -->
+        <div class="hero-bg-motif"></div>
+
+        <div class="container position-relative" style="z-index:1;">
+          <div class="row align-items-center g-5">
+
+            <!-- LEFT: Hero Copy & CTA -->
+            <div class="col-lg-6 animate-in">
+              <div class="title-pill mb-3">
+                <i class="bi bi-palette-fill" style="color:var(--clay-terracotta);"></i>
+                Platform Edukasi Warna
+              </div>
+              <h1 class="hero-main-title mb-4">
+                Pelajari &amp;<br/>
+                Kuasai <span style="color:var(--clay-terracotta);">Teori Warna</span>
+              </h1>
+              <p class="mb-4" style="max-width:480px;font-size:1.05rem;font-weight:500;color:var(--ink-secondary);line-height:1.75;">
+                Dari roda warna 12 nada, skema harmoni profesional, hingga simulasi pencampuran RGB real-time. Belajar teori warna kini menyenangkan dan mudah dipahami.
+              </p>
+
+              <div class="d-flex align-items-center gap-3 flex-wrap mb-4">
+                <a href="#materi" class="btn-neo btn-neo-primary">
+                  Mulai Belajar <i class="bi bi-arrow-right ms-1"></i>
+                </a>
+                <a href="#simulasi" class="btn-neo btn-neo-white">
+                  <i class="bi bi-eyedropper me-1"></i> Buka Lab Warna
+                </a>
+              </div>
+
+              <!-- Mini Stat Chips -->
+              <div class="d-flex gap-2 flex-wrap">
+                <div class="stat-pill"><span class="stat-pill-num">7</span> Topik Teori</div>
+                <div class="stat-pill"><span class="stat-pill-num">10</span> Soal Kuis</div>
+                <div class="stat-pill"><span class="stat-pill-num">∞</span> Eksperimen Warna</div>
+              </div>
+            </div>
+
+            <!-- RIGHT: Showcase Visual Card -->
+            <div class="col-lg-6 animate-in">
+              <div class="hero-visual-frame">
+
+                <!-- Floating Accent Sticker -->
+                <div class="hero-accent-badge">
+                  <div style="font-size:0.58rem;font-weight:900;opacity:0.85;letter-spacing:0.08em;">BELAJAR</div>
+                  <div style="font-size:1.55rem;font-weight:900;line-height:1;">100%</div>
+                  <div style="font-size:0.58rem;font-weight:900;letter-spacing:0.06em;">GRATIS</div>
+                </div>
+
+                <!-- 3D Conic Color Wheel -->
+                <div class="hero-wheel-stage">
+                  <div class="hero-wheel-wrap">
+                    <div class="hero-wheel" id="heroWheel"></div>
+                    <div class="hero-wheel-hole">
+                      <span class="hero-wheel-label">12<br/>Warna</span>
+                    </div>
+                  </div>
+
+                  <!-- Floating Color Chips -->
+                  <div class="hero-color-chip" style="--tx:-142px;--ty:-68px;background:#EF4444;color:#FFFFFF;--delay:0s;">
+                    <span class="chip-dot" style="background:#FFFFFF;"></span> Merah
+                  </div>
+                  <div class="hero-color-chip" style="--tx:115px;--ty:-82px;background:#FACC15;color:#18181B;--delay:0.5s;">
+                    <span class="chip-dot" style="background:#18181B;"></span> Kuning
+                  </div>
+                  <div class="hero-color-chip" style="--tx:145px;--ty:58px;background:#3B82F6;color:#FFFFFF;--delay:1s;">
+                    <span class="chip-dot" style="background:#FFFFFF;"></span> Biru
+                  </div>
+                  <div class="hero-color-chip" style="--tx:-145px;--ty:58px;background:#22C55E;color:#FFFFFF;--delay:1.5s;">
+                    <span class="chip-dot" style="background:#FFFFFF;"></span> Hijau
+                  </div>
+                  <div class="hero-color-chip" style="--tx:-75px;--ty:148px;background:#F97316;color:#FFFFFF;--delay:2s;">
+                    <span class="chip-dot" style="background:#FFFFFF;"></span> Oranye
+                  </div>
+                  <div class="hero-color-chip" style="--tx:72px;--ty:148px;background:#8B5CF6;color:#FFFFFF;--delay:2.5s;">
+                    <span class="chip-dot" style="background:#FFFFFF;"></span> Ungu
+                  </div>
+                </div>
+
+                <!-- Frame Footer Bar -->
+                <div class="hero-frame-stats">
+                  <div class="d-flex align-items-center gap-2">
+                    <div class="dot-cluster">
+                      <span style="background:#EF4444;"></span>
+                      <span style="background:#FACC15;"></span>
+                      <span style="background:#3B82F6;"></span>
+                    </div>
+                    <span class="fw-bold" style="font-size:0.86rem;color:var(--ink);">Warna Primer</span>
+                  </div>
+                  <div class="d-flex align-items-center">
+                    <div class="dot-cluster">
+                      <span style="background:#F97316;"></span>
+                      <span style="background:#22C55E;"></span>
+                      <span style="background:#8B5CF6;"></span>
+                    </div>
+                    <span class="fw-bold ms-2" style="font-size:0.75rem;color:var(--ink-secondary);">+9 warna lainnya</span>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ===== FITUR UTAMA BENTO ===== -->
+    <section class="py-5" id="fitur">
+      <div class="container">
+
+        <!-- Section Title Bar -->
+        <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-end mb-4 pb-2 animate-in">
+          <div>
+            <div class="title-pill mb-2">Eksplorasi Fitur</div>
+            <h2 class="section-headline mb-0">Fitur Utama Pembelajaran</h2>
+          </div>
+        </div>
+
+        <!-- 4-Card Bento Row -->
+        <div class="row g-4 animate-in">
+
+          <!-- Card 1: Materi -->
+          <div class="col-6 col-lg-3">
+            <a href="#materi" class="text-decoration-none d-block h-100">
+              <div class="bento-card-kitchen card-clay-wheat">
+                <div class="bento-icon-well">
+                  <i class="bi bi-book-half"></i>
+                </div>
+                <h5>Materi Teori</h5>
+                <p>Panduan lengkap mulai dari roda warna dasar hingga skema harmoni desain grafis.</p>
+                <div class="mt-auto pt-3">
+                  <span class="dish-pill-badge">7 Topik</span>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Card 2: Roda Warna -->
+          <div class="col-6 col-lg-3">
+            <a href="#materi" class="text-decoration-none d-block h-100">
+              <div class="bento-card-kitchen card-clay-sage">
+                <div class="bento-icon-well">
+                  <i class="bi bi-circle-half"></i>
+                </div>
+                <h5>Roda Warna</h5>
+                <p>Visualisasi 12 spektrum warna interaktif untuk menemukan pasangan harmoni seimbang.</p>
+                <div class="mt-auto pt-3">
+                  <span class="dish-pill-badge">12 Spektrum</span>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Card 3: Lab Campuran -->
+          <div class="col-6 col-lg-3">
+            <a href="#simulasi" class="text-decoration-none d-block h-100">
+              <div class="bento-card-kitchen card-clay-coral">
+                <div class="bento-icon-well">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#18181B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M10 2v7.31L4.62 17.6A2 2 0 0 0 6.31 21h11.38a2 2 0 0 0 1.69-3.4L14 9.31V2"/>
+                    <path d="M8.5 2h7"/>
+                    <path d="M7 16h10"/>
+                  </svg>
+                </div>
+                <h5>Lab Campuran</h5>
+                <p>Campurkan dua warna dan amati perpaduan nilai RGB beserta kode HEX secara real-time.</p>
+                <div class="mt-auto pt-3">
+                  <span class="dish-pill-badge">RGB Lab</span>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Card 4: Kuis -->
+          <div class="col-6 col-lg-3">
+            <a href="#kuis" class="text-decoration-none d-block h-100">
+              <div class="bento-card-kitchen card-clay-blue">
+                <div class="bento-icon-well">
+                  <i class="bi bi-trophy-fill"></i>
+                </div>
+                <h5>Kuis Gamifikasi</h5>
+                <p>10 soal evaluasi instan dengan penjelasan mendalam pada setiap opsi jawaban.</p>
+                <div class="mt-auto pt-3">
+                  <span class="dish-pill-badge">10 Soal</span>
+                </div>
+              </div>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== SPLIT BANNER (Zero Whitespace Gap Grid) ===== -->
+    <section class="py-5">
+      <div class="container">
+        <div class="split-banner-container animate-in">
+
+          <!-- LEFT: Centered Wheel Display -->
+          <div class="split-banner-left">
+            <div class="split-wheel-box">
+              <div class="split-wheel"></div>
+              <div class="split-wheel-hub">Harmoni</div>
+            </div>
+            <h4 class="fw-black mb-1" style="font-size:1.35rem;color:var(--ink);">Roda 12 Warna Harmoni</h4>
+            <p class="small fw-semibold mb-3" style="color:var(--ink-secondary);max-width:280px;">
+              Fondasi teori warna sejak zaman Sir Isaac Newton &amp; Goethe
+            </p>
+            <div class="d-flex justify-content-center gap-2 flex-wrap">
+              <span class="dish-pill-badge" style="background:#EF4444;color:#FFFFFF;border-color:var(--ink);">Primer</span>
+              <span class="dish-pill-badge" style="background:#22C55E;color:#FFFFFF;border-color:var(--ink);">Sekunder</span>
+              <span class="dish-pill-badge" style="background:#8B5CF6;color:#FFFFFF;border-color:var(--ink);">Tersier</span>
+            </div>
+          </div>
+
+          <!-- RIGHT: Content & Philosophy -->
+          <div class="split-banner-right">
+            <div class="mb-3">
+              <span class="title-pill" style="font-size:0.75rem;">Filosofi Belajar HueMatch</span>
+            </div>
+            <h3 class="fw-black mb-3" style="font-size:clamp(1.5rem, 2.6vw, 2.1rem);line-height:1.2;color:var(--ink);">
+              Warna bukan sekadar hiasan, ia adalah <span style="color:var(--clay-terracotta);">bahasa emosi visual</span>.
+            </h3>
+            <p class="fw-semibold mb-4" style="line-height:1.75;color:var(--ink-secondary);font-size:0.96rem;">
+              Warna menentukan fokus mata, membangkitkan suasana hati, hingga mempengaruhi keputusan pengguna. Memahami teori warna memberi Anda kendali penuh dalam menciptakan karya desain yang memikat dan berkarakter.
+            </p>
+
+            <!-- Stat Boxes Row -->
+            <div class="row g-3 mb-4">
+              <div class="col-6">
+                <div class="value-stat-card">
+                  <div class="fw-black" style="font-size:1.85rem;line-height:1;color:var(--ink);">85%</div>
+                  <small class="fw-bold d-block mt-1" style="color:var(--ink-muted);font-size:0.78rem;line-height:1.4;">
+                    Keputusan visual pertama dipengaruhi oleh warna
+                  </small>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="value-stat-card">
+                  <div class="fw-black" style="font-size:1.85rem;line-height:1;color:var(--ink);">10 Juta+</div>
+                  <small class="fw-bold d-block mt-1" style="color:var(--ink-muted);font-size:0.78rem;line-height:1.4;">
+                    Variasi spektrum warna dapat dibedakan mata manusia
+                  </small>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <a href="#materi" class="btn-neo btn-neo-primary" style="width:fit-content;">
+                Jelajahi Materi Lengkap <i class="bi bi-arrow-right ms-1"></i>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== MATERI SECTION ===== -->
+    <div id="materi" style="scroll-margin-top:80px;">
+      <section class="py-5">
+        <div class="container">
+
+          <!-- Materi Header Plate (Alas Terpadu) -->
+          <div class="materi-header-plate animate-in">
+            <div class="materi-header-left">
+              <div class="title-pill mb-2">Modul Teori</div>
+              <h2 class="section-headline mb-0" style="font-size:clamp(1.5rem, 2.7vw, 2.2rem);">Eksplorasi Teori Lengkap</h2>
+            </div>
+
+            <!-- Jump Navigation Chips -->
+            <div class="materi-nav-chips">
+              <a href="#section-pengantar" class="btn-neo btn-neo-white">Pengantar</a>
+              <a href="#section-primer"    class="btn-neo btn-neo-white">Primer</a>
+              <a href="#section-sekunder"  class="btn-neo btn-neo-white">Sekunder</a>
+              <a href="#section-tersier"   class="btn-neo btn-neo-white">Tersier</a>
+              <a href="#section-rgbcmyk"   class="btn-neo btn-neo-white">RGB &amp; CMYK</a>
+              <a href="#section-suhu"      class="btn-neo btn-neo-white">Suhu Warna</a>
+              <a href="#section-harmoni"   class="btn-neo btn-neo-white">Harmoni</a>
+            </div>
+          </div>
+
+          <!-- Dynamic Materi Container -->
+          <div id="materi-content">
+            <div class="text-center py-5">
+              <div class="spinner-border" role="status" style="color:var(--clay-terracotta);"></div>
+              <p class="mt-3 fw-bold" style="color:var(--ink-secondary);">Memuat materi teori warna...</p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+    </div>
+
+    <!-- ===== SIMULASI SECTION ===== -->
+    <div id="simulasi" style="scroll-margin-top:80px;">
+      <section class="py-5" style="border-top:var(--border-mid);border-bottom:var(--border-mid);">
+        <div class="container">
+          <div class="text-center mb-5 animate-in">
+            <div class="title-pill mb-2">Lab Interaktif</div>
+            <h2 class="section-headline mb-2">Simulasi Pencampuran Warna</h2>
+            <p style="max-width:520px;margin:0 auto;font-size:1rem;font-weight:600;color:var(--ink-secondary);">
+              Pilih dua warna sesuka Anda, tekan tombol campur, dan lihat perpaduan warna digital serta kode HEX secara instan.
+            </p>
+          </div>
+
+          <div class="row justify-content-center">
+            <div class="col-lg-9 col-xl-8">
+              <div class="sim-station-card animate-in">
+
+                <!-- Color Pickers Row -->
+                <div class="row align-items-center g-3 text-center mb-4">
+                  <div class="col-5">
+                    <label class="fw-bold small mb-2 d-block" style="color:var(--ink-secondary);">WARNA A</label>
+                    <input type="color" id="colorA" value="#FF3E83"
+                      class="form-control form-control-color color-pick-circle mx-auto"
+                      aria-label="Warna A" />
+                    <div class="dish-pill-badge mt-2 mx-auto" id="hexA" style="background:#FF3E83;color:#FFFFFF;">#FF3E83</div>
+                  </div>
+
+                  <div class="col-2">
+                    <div class="operator-badge">+</div>
+                  </div>
+
+                  <div class="col-5">
+                    <label class="fw-bold small mb-2 d-block" style="color:var(--ink-secondary);">WARNA B</label>
+                    <input type="color" id="colorB" value="#FFE600"
+                      class="form-control form-control-color color-pick-circle mx-auto"
+                      aria-label="Warna B" />
+                    <div class="dish-pill-badge mt-2 mx-auto" id="hexB" style="background:#FFE600;color:#18181B;">#FFE600</div>
+                  </div>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="d-flex gap-3 justify-content-center mb-4">
+                  <button id="btn-mix" class="btn-neo btn-neo-primary" onclick="campurkanWarna()">
+                    <i class="bi bi-droplet-half me-1"></i> Campurkan Warna!
+                  </button>
+                  <button id="btn-random" class="btn-neo btn-neo-white" onclick="randomColors()">
+                    <i class="bi bi-shuffle me-1"></i> Acak Warna
+                  </button>
+                </div>
+
+                <!-- Result Card -->
+                <div id="resultArea" style="display:none;" class="border-top pt-4 mt-2">
+                  <div class="row g-4 align-items-stretch">
+
+                    <!-- Swatch Preview -->
+                    <div class="col-md-4">
+                      <div id="resultPreview"
+                        class="rounded-4 d-flex align-items-center justify-content-center mb-3"
+                        style="height:140px;border:var(--border-thick);box-shadow:var(--shadow-sm);">
+                        <span id="resultHexLabel" class="dish-pill-badge" style="font-size:1rem;"></span>
+                      </div>
+                      <button id="btn-copy-hex" class="btn-neo btn-neo-primary w-100" onclick="copyHexCode()">
+                        <i class="bi bi-clipboard me-1"></i> Salin HEX
+                      </button>
+                    </div>
+
+                    <!-- Info Table -->
+                    <div class="col-md-8">
+                      <div class="sim-info-row">
+                        <span><i class="bi bi-hash me-2"></i>Hasil HEX</span>
+                        <span id="result-hex" class="font-monospace fw-bold"></span>
+                      </div>
+                      <div class="sim-info-row">
+                        <span><i class="bi bi-circle-fill me-2" style="font-size:0.75rem;"></i>Nilai RGB</span>
+                        <span id="result-rgb" class="font-monospace fw-bold"></span>
+                      </div>
+                      <div class="sim-info-row">
+                        <span><i class="bi bi-brightness-high me-2"></i>Tingkat Kecerahan</span>
+                        <span id="result-brightness" class="fw-bold"></span>
+                      </div>
+                      <div class="sim-info-row">
+                        <span><i class="bi bi-palette me-2"></i>Kategori Spektrum</span>
+                        <span id="result-category" class="fw-bold" style="color:var(--clay-terracotta);"></span>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ===== KUIS SECTION ===== -->
+    <div id="kuis" style="scroll-margin-top:80px;">
+      <section class="py-5">
+        <div class="container">
+          <div class="text-center mb-5 animate-in">
+            <div class="title-pill mb-2">Evaluasi Pemahaman</div>
+            <h2 class="section-headline mb-2">Kuis Teori Warna</h2>
+            <p style="max-width:520px;margin:0 auto;font-size:1rem;font-weight:600;color:var(--ink-secondary);">
+              Jawab 10 pertanyaan pilihan ganda dan periksa skor pemahaman Anda mengenai teori warna.
+            </p>
+          </div>
+
+          <div class="row justify-content-center">
+            <div class="col-lg-8 col-xl-7">
+
+              <div class="text-center py-5" id="kuis-loader">
+                <div class="spinner-border" role="status" style="color:var(--clay-terracotta);"></div>
+                <p class="mt-3 fw-bold" style="color:var(--ink-secondary);">Memuat soal kuis...</p>
+              </div>
+
+              <div id="kuis-area" style="display:none;">
+                <div class="d-flex justify-content-between mb-2 fw-bold small" style="color:var(--ink-secondary);">
+                  <span id="progress-text">Soal 1–10</span>
+                  <span id="answered-text" style="color:var(--clay-terracotta);">0 Terjawab</span>
+                </div>
+                <div class="quiz-progress-track mb-5">
+                  <div class="quiz-progress-fill" id="progressBar" style="width:0%;"></div>
+                </div>
+
+                <div id="questions-container"></div>
+
+                <div class="text-center mt-5" id="submit-section">
+                  <button id="btn-submit" class="btn-neo btn-neo-primary" style="padding:1rem 2.5rem;font-size:1.05rem;" onclick="submitKuis()">
+                    <i class="bi bi-check-circle-fill me-2"></i> Serahkan Jawaban
+                  </button>
+                  <p class="mt-2 small fw-bold" style="color:var(--ink-muted);">Pastikan semua pertanyaan sudah dijawab.</p>
+                </div>
+              </div>
+
+              <!-- Score Summary Card -->
+              <div class="quiz-score-card mt-4" id="scoreCard" style="display:none;">
+                <div style="font-size:3.5rem;margin-bottom:0.5rem;" id="scoreEmoji">🎉</div>
+                <div class="fw-black mb-0" style="font-size:4.8rem;line-height:1;color:var(--ink);" id="scoreNumber">0</div>
+                <p class="fw-bold mb-4" style="color:var(--ink-secondary);">dari 100 poin maksimal</p>
+                <div class="row g-3 justify-content-center mb-4">
+                  <div class="col-4">
+                    <div class="value-stat-card text-center" style="border-color:#16A34A;">
+                      <h3 class="fw-black mb-1" style="color:#16A34A;" id="correct-count">0</h3>
+                      <small class="fw-bold" style="color:var(--ink-secondary);">BENAR</small>
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <div class="value-stat-card text-center" style="border-color:#DC2626;">
+                      <h3 class="fw-black mb-1" style="color:#DC2626;" id="wrong-count">0</h3>
+                      <small class="fw-bold" style="color:var(--ink-secondary);">SALAH</small>
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <div class="value-stat-card text-center" style="border-color:#D97706;">
+                      <h3 class="fw-black mb-1" style="color:#D97706;" id="skip-count">0</h3>
+                      <small class="fw-bold" style="color:var(--ink-secondary);">LEWAT</small>
+                    </div>
+                  </div>
+                </div>
+                <p id="score-message" class="fw-semibold mb-4" style="font-size:1.05rem;color:var(--ink);"></p>
+                <button class="btn-neo btn-neo-white" onclick="ulangiKuis()">
+                  <i class="bi bi-arrow-clockwise me-1"></i> Ulangi Kuis
+                </button>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer-neo">
+      <div class="container">
+        <div class="d-flex align-items-center justify-content-between flex-wrap gap-3">
+          <span class="navbar-brand-neo">Hue<span>Match</span>.</span>
+          <p class="mb-0 small fw-bold" style="color:var(--ink-secondary);">&copy; 2026 HueMatch · Edukasi Teori Warna Interaktif</p>
+          <div class="d-flex gap-2">
+            <a href="#beranda"  class="dish-pill-badge">Beranda</a>
+            <a href="#materi"   class="dish-pill-badge">Materi</a>
+            <a href="#simulasi" class="dish-pill-badge">Simulasi</a>
+            <a href="#kuis"     class="dish-pill-badge">Kuis</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/xml-loader.js"></script>
+    <script src="js/simulasi.js"></script>
+    <script src="js/kuis.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

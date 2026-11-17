@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<materi>
+
+  <section id="pengantar">
+    <judul>Apa Itu Teori Warna?</judul>
+    <deskripsi>
+      Teori warna adalah sekumpulan panduan tentang cara warna berinteraksi satu sama lain.
+      Dikembangkan oleh ilmuwan dan seniman selama berabad-abad, teori ini menjadi fondasi
+      dalam desain grafis, seni, fashion, arsitektur, dan banyak bidang lainnya.
+      Memahami teori warna membantu Anda menciptakan kombinasi warna yang harmonis, kontras,
+      dan penuh makna.
+    </deskripsi>
+    <fakta>Lebih dari 10 juta warna dapat dibedakan oleh mata manusia!</fakta>
+  </section>
+
+  <section id="primer">
+    <judul>Warna Primer</judul>
+    <deskripsi>
+      Warna primer adalah warna dasar yang tidak dapat dibuat dengan mencampurkan warna lain.
+      Dalam model warna pigmen (RYB) yang digunakan dalam seni lukis, terdapat 3 warna primer.
+      Semua warna lain di alam semesta ini lahir dari kombinasi ketiga warna ini.
+    </deskripsi>
+    <warna>
+      <item>
+        <nama>Merah</nama>
+        <hex>#FF2D2D</hex>
+        <deskripsi>Warna energi, gairah, dan keberanian. Merah adalah warna paling mencolok dan sering digunakan untuk menarik perhatian. Dalam psikologi warna, merah meningkatkan detak jantung dan membangkitkan emosi kuat.</deskripsi>
+        <simbolisme>Cinta, Bahaya, Kekuatan, Semangat</simbolisme>
+      </item>
+      <item>
+        <nama>Kuning</nama>
+        <hex>#FFD700</hex>
+        <deskripsi>Warna kebahagiaan, optimisme, dan kreativitas. Kuning adalah warna paling cerah yang dapat ditangkap mata manusia dan sering diasosiasikan dengan matahari dan energi positif.</deskripsi>
+        <simbolisme>Kebahagiaan, Kecerdasan, Peringatan, Kehangatan</simbolisme>
+      </item>
+      <item>
+        <nama>Biru</nama>
+        <hex>#1E90FF</hex>
+        <deskripsi>Warna kepercayaan, kedalaman, dan ketenangan. Biru adalah warna favorit sebagian besar orang di dunia. Warna ini dikaitkan dengan langit dan laut, memberi kesan luas dan damai.</deskripsi>
+        <simbolisme>Kepercayaan, Ketenangan, Loyalitas, Kecerdasan</simbolisme>
+      </item>
+    </warna>
+  </section>
+
+  <section id="sekunder">
+    <judul>Warna Sekunder</judul>
+    <deskripsi>
+      Warna sekunder dihasilkan dengan mencampurkan dua warna primer dalam proporsi yang sama.
+      Hasilnya adalah tiga warna baru yang melengkapi roda warna (color wheel).
+    </deskripsi>
+    <warna>
+      <item>
+        <nama>Oranye</nama>
+        <hex>#FF8C00</hex>
+        <campuran>Merah + Kuning</campuran>
+        <deskripsi>Oranye memancarkan kehangatan, antusiasme, dan kreativitas. Warna ini menggabungkan energi merah dengan keceriaan kuning, menghasilkan warna yang ramah dan menggugah selera.</deskripsi>
+      </item>
+      <item>
+        <nama>Hijau</nama>
+        <hex>#32CD32</hex>
+        <campuran>Kuning + Biru</campuran>
+        <deskripsi>Hijau identik dengan alam, pertumbuhan, dan harmoni. Warna ini paling mudah dilihat mata manusia dan memberikan efek menenangkan, sering digunakan dalam desain kesehatan dan lingkungan.</deskripsi>
+      </item>
+      <item>
+        <nama>Ungu</nama>
+        <hex>#8B00FF</hex>
+        <campuran>Merah + Biru</campuran>
+        <deskripsi>Ungu adalah warna kemewahan, misteri, dan spiritualitas. Dahulu ungu hanya dikenakan bangsawan karena sulitnya mendapatkan pewarna ungu alami. Kini identik dengan kreativitas dan imajinasi.</deskripsi>
+      </item>
+    </warna>
+  </section>
+
+  <section id="tersier">
+    <judul>Warna Tersier</judul>
+    <deskripsi>
+      Warna tersier dibuat dengan mencampurkan satu warna primer dan satu warna sekunder
+      yang berdekatan dalam roda warna. Menghasilkan 6 warna perantara yang kaya nuansa.
+    </deskripsi>
+    <warna>
+      <item>
+        <nama>Merah-Oranye</nama>
+        <hex>#FF4500</hex>
+        <campuran>Merah + Oranye</campuran>
+      </item>
+      <item>
+        <nama>Kuning-Oranye</nama>
+        <hex>#FFA500</hex>
+        <campuran>Kuning + Oranye</campuran>
+      </item>
+      <item>
+        <nama>Kuning-Hijau</nama>
+        <hex>#9ACD32</hex>
+        <campuran>Kuning + Hijau</campuran>
+      </item>
+      <item>
+        <nama>Biru-Hijau</nama>
+        <hex>#00CED1</hex>
+        <campuran>Biru + Hijau</campuran>
+      </item>
+      <item>
+        <nama>Biru-Ungu</nama>
+        <hex>#6A0DAD</hex>
+        <campuran>Biru + Ungu</campuran>
+      </item>
+      <item>
+        <nama>Merah-Ungu</nama>
+        <hex>#C71585</hex>
+        <campuran>Merah + Ungu</campuran>
+      </item>
+    </warna>
+  </section>
+
+  <section id="rgbcmyk">
+    <judul>Model Warna: RGB vs CMYK</judul>
+    <deskripsi>
+      Dalam dunia desain dan teknologi, terdapat dua model warna utama yang digunakan untuk tujuan yang berbeda: layar digital dan media cetak.
+    </deskripsi>
+    <rgbcmyk>
+      <item type="rgb">
+        <nama>RGB (Red, Green, Blue)</nama>
+        <deskripsi>Lebih cocok untuk desain digital, biasanya digunakan pada layar televisi, monitor komputer, dan perangkat LED lainnya. Model ini bersifat aditif (penggabungan cahaya menghasilkan warna putih).</deskripsi>
+      </item>
+      <item type="cmyk">
+        <nama>CMYK (Cyan, Magenta, Yellow, Black)</nama>
+        <deskripsi>Berfungsi lebih baik pada digital printing karena bisa menutupi seluruh warna pada background putih. Tinta yang dicetak mengurangi cahaya yang seharusnya dipantulkan (model warna substraktif).</deskripsi>
+      </item>
+    </rgbcmyk>
+  </section>
+
+  <section id="suhu">
+    <judul>Suhu Warna: Panas vs Dingin</judul>
+    <deskripsi>
+      Warna dapat dikelompokkan berdasarkan kesan psikologis suhu yang ditimbulkannya ketika dilihat oleh mata manusia.
+    </deskripsi>
+    <suhu>
+      <item type="hot">
+        <nama>Hot Color (Warna Panas)</nama>
+        <deskripsi>Warna-warna hangat pada dasarnya mempunyai sifat yang membawa gairah, semangat, dan keceriaan. Contoh warna: Merah, Oranye, Kuning.</deskripsi>
+      </item>
+      <item type="cold">
+        <nama>Cold Color (Warna Dingin)</nama>
+        <deskripsi>Kelompok warna dingin biasanya memiliki efek menenangkan dan menyejukkan bagi siapa saja yang melihatnya. Contoh warna: Biru, Hijau, Ungu.</deskripsi>
+      </item>
+    </suhu>
+  </section>
+
+  <section id="harmoni">
+    <judul>Harmoni Warna</judul>
+    <deskripsi>
+      Harmoni warna adalah kombinasi warna yang secara visual menyenangkan dan seimbang. Ada beberapa skema harmoni warna yang umum digunakan dalam desain profesional.
+    </deskripsi>
+    <kombinasi>
+      <item>
+        <nama>Komplementer</nama>
+        <warna1>#FF2D2D</warna1>
+        <warna2>#32CD32</warna2>
+        <deskripsi>Warna yang berlawanan satu sama lain seperti merah dan hijau. Memberikan kontras yang kuat dan visual yang menarik saat digunakan dalam desain.</deskripsi>
+      </item>
+      <item>
+        <nama>Analogus</nama>
+        <warna1>#FF2D2D</warna1>
+        <warna2>#FF8C00</warna2>
+        <deskripsi>Warna yang berdekatan satu sama lain pada lingkaran warna, contohnya warna merah, oranye dan kuning. Perpaduan warna ini memberikan kesan santai dan berkelanjutan.</deskripsi>
+      </item>
+      <item>
+        <nama>Triadik</nama>
+        <warna1>#FF2D2D</warna1>
+        <warna2>#FFD700</warna2>
+        <deskripsi>Warna yang berjarak tiga satuan yang sama dari titik pusat. Contohnya warna merah, kuning dan biru. Saat digunakan dalam desain memberikan tampilan yang lebih beragam namun tetap dinamis.</deskripsi>
+      </item>
+      <item>
+        <nama>Tetradik</nama>
+        <warna1>#FF2D2D</warna1>
+        <warna2>#1E90FF</warna2>
+        <deskripsi>Warna yang berjarak empat satuan yang sama dari titik pusat seperti merah, oranye, kuning, dan biru. Bisa dimanfaatkan untuk memberikan detail pada desain dan dimensi visual yang menarik.</deskripsi>
+      </item>
+      <item>
+        <nama>Monokromatik</nama>
+        <warna1>#1E90FF</warna1>
+        <warna2>#87CEFA</warna2>
+        <deskripsi>Warna yang sama namun dengan intensitas berbeda. Warna merah yang lebih pudar menjadi merah jambu dan warna merah jambu jika diturunkan menjadi warna pastel.</deskripsi>
+      </item>
+      <item>
+        <nama>Split Komplementer</nama>
+        <warna1>#FF2D2D</warna1>
+        <warna2>#00CED1</warna2>
+        <deskripsi>Warna yang berlawanan dari satu warna lain pada lingkaran warna namun masih berdekatan jaraknya. Kombinasi ini memberikan kesan bersih dan minimalis.</deskripsi>
+      </item>
+    </kombinasi>
+  </section>
+
+</materi>
